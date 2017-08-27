@@ -46,4 +46,4 @@ label start:
     extend " This is what happens when the heart is kept from beating to the musical rhythm of love."
     extend " What a tragedy."    
            
-return
+    jump pro1

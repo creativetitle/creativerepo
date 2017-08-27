@@ -1,18 +1,18 @@
-#Define variables.
+# Define variables.
 
-define newscene = Fade(1.5,1.5,1.5)
+define newscene = Fade(1.5,1.5,1.8)
 
-#Define characters
-define nar = Character("Narrator")
+# Define characters
+define nar = Character("Narrator", what_color = "#bde7ff")
 define elo = Character("Elorey")
 define d = Character("Durs", image = "durs")
 define Kris = Character("Knightly Risenian")
 
-#Prologue 1.0 start
+# Prologue 1.0 start
 
 label pro1:
 
-    #scene bg_river with newscene
+    scene bg_river with newscene
 
     elo "How is it now?"
 
@@ -50,7 +50,7 @@ label pro1:
 
     d "Not first. My arms won’t explode first. It’s the heart that goes first. Everyone knows that."
 
-    elo "No, no one knows that. It’s a complete myth that anything will /“explode./”"
+    elo "No, no one knows that. It’s a complete myth that anything will \“explode.\”"
 
     d "Don’t be stupid, Elorey. Look, one touch and it would probably pop."
 
@@ -66,9 +66,9 @@ label pro1:
 
     elo "Nothing’s coming out Durs! You’re going to be alright."
 
-    d "/“Alright,/” she says. I’m growing a blue balloon in my chest and she says, /“Alright./” You can be a real airhead sometimes, you know? But hey, I think I’m actually starting to feel better. The swelling’s gone down, and I’m feeling generally kinder than I was yesterday. Maybe for once that intuition of yours will prove itself."
+    d "\“Alright,\” she says. I’m growing a blue balloon in my chest and she says, \“Alright.\” You can be a real airhead sometimes, you know? But hey, I think I’m actually starting to feel better. The swelling’s gone down, and I’m feeling generally kinder than I was yesterday. Maybe for once that intuition of yours will prove itself."
 
-    nar "Dare I try to interpret whether he really meant that? His face is definitely getting worse. And I’d say he’s lost sense of the word /“kindness./”"
+    nar "Dare I try to interpret whether he really meant that? His face is definitely getting worse. And I’d say he’s lost sense of the word \“kindness.\”"
 
 #FADE TO NARRATION SCENE (PROBABLY JUST BLACK)
 #BGM: Heart of Affliction
