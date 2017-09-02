@@ -1,0 +1,28 @@
+Dialogue:
+Fast:
+	"HI WHATS UP.{fast}"
+		*usually:
+	show XXX
+	with vpunch
+Interruption:
+	"What's that in your hand -{w=.1}{nw}"
+	"Oh, nothing..."
+Short breath:
+	"Hey,{w=.1} what's up?"
+Short pause:
+	"Er -{w=.25} where was I again?"
+Extension:
+	"Who are you?{w} Nah don't tell me.{w} Wait, yeah, tell me."
+Extension with ellipses:
+	"I'm really good at cooking.{w}..most of the time.
+Dramatic pause:
+	pause 0.8
+
+Scene:
+To new scene:
+	scene XXX with newscene
+Move location (BG) or shift to narration:
+	scene XXX with quickfade
+To illustration:
+	show XXX with quickfade
+	hide XXX with quickfade

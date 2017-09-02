@@ -1,20 +1,21 @@
-# Define variables.
-
+# Define variables
 define newscene = Fade(1.5,1.5,1.8)
+define quickfade = Dissolve(.8)
 
 # Define characters
-define nar = Character("Narrator", what_color = "#bde7ff")
+define nar = Character("", what_color = "#94cc92")
 define elo = Character("Elorey")
 define d = Character("Durs", image = "durs")
 define Kris = Character("Knightly Risenian")
 
-# Prologue 1.0 start
-
+# Prologue start : Scene 1
 label pro1:
 
     scene bg_river with newscene
 
     elo "How is it now?"
+
+    show durs longing1 with dissolve
 
     d "Better."
 
@@ -24,23 +25,23 @@ label pro1:
 
     elo "Oh..."
 
-    nar "I don’t know if he wants me to note the swelling from the poison or the sarcasm on his expression. Or both."
+    nar "I don’t know if he wants me to note the swelling from the poison or the sarcasm on his expression.{w} Or both?"
 
-    elo "Sorry, Durs, I just need to know how much pain you’re feeling so I can -"
+    elo "Sorry, Durs, I just need to know how much pain you’re feeling so I can -{w=.1}{nw}"
 
-    d "So you can help or something? Don’t worry. I’m not in pain yet, but I’m certainly not feeling better. Thanks for asking."
+    d "So you can help or something?{w} Don’t worry. I’m not in pain yet, but I’m certainly not feeling better. Thanks for asking."
 
     nar "What does that even mean?"
 
-    elo "Listen, I’m getting you inside those walls no matter what. I’ll carry you if I have to."
+    elo "Listen, I’m getting you inside those walls no matter what.{w} I’ll carry you if I have to."
 
     d "..."
 
-    elo "Er - drag you."
+    elo "Er -{w=.25} drag you."
 
     d "Hmm that’s great."
 
-    nar "At least I know that’s sarcasm."
+    nar "At least I can tell that was sarcasm."
 
     elo "All I can ask is that you hang on."
 
@@ -48,58 +49,86 @@ label pro1:
 
     elo "Your arms won’t explode."
 
-    d "Not first. My arms won’t explode first. It’s the heart that goes first. Everyone knows that."
+    d "Not first.{w} My arms won’t explode first.{w} It’s the heart that goes first. Everyone knows that."
 
     elo "No, no one knows that. It’s a complete myth that anything will \“explode.\”"
 
-    d "Don’t be stupid, Elorey. Look, one touch and it would probably pop."
+    d "Don’t be stupid, Elorey.{w} Look, one touch and it would probably pop."
 
-    nar "I love him too much to be offended by his words right now. And I’m trying to understand what he’s going through. I place my hand on where his chest bulges and discolors. I even give a little comforting rub."
+    nar "I love him too much to be offended by his words right now.{w} And I’m trying to understand what he’s going through." 
+    nar "I place my hand on where his chest bulges and discolors.{w} I even give a little comforting rub."
 
-    d "It’s not a baby, Elorey. Get those hands off me."
+    pause .8
 
-    elo "B-baby?"
+    d "It’s not a baby, Elorey."
+    d "Didn't I say not to touch it?{w} Get those hands off me."
 
-    nar "No...now’s definitely not the time to bring up that news."
+    elo "B-{w=.25}baby?"
+
+    nar "Uh...now’s definitely not the time to bring up that news."
 
     d "And I’m sure this’ll hurt a whole lot more coming out."
 
-    elo "Nothing’s coming out Durs! You’re going to be alright."
+    elo "Nothing’s coming out Durs!{w} You’re going to be alright."
 
-    d "\“Alright,\” she says. I’m growing a blue balloon in my chest and she says, \“Alright.\” You can be a real airhead sometimes, you know? But hey, I think I’m actually starting to feel better. The swelling’s gone down, and I’m feeling generally kinder than I was yesterday. Maybe for once that intuition of yours will prove itself."
+    d "\“Alright,\” she says.{w} I’m growing a blue balloon in my chest and she says, \“Alright.\”"
+    d "You can be a real airhead sometimes, you know?{w} But hey, I think I’m actually starting to feel better."
+    d "The swelling’s gone down, and I’m feeling generally kinder than yesterday.{w} Maybe for once that awful intuition of yours will prove us wrong."
 
-    nar "Dare I try to interpret whether he really meant that? His face is definitely getting worse. And I’d say he’s lost sense of the word \“kindness.\”"
+    nar "Do I even try to interpret whether he really meant that?"
+    nar "His face is definitely getting worse.{w} And I’d say he’s lost sense of the word \“kindness...\”"
 
-#FADE TO NARRATION SCENE (PROBABLY JUST BLACK)
-#BGM: Heart of Affliction
+# 1st interlude
+    scene bg_discourse with quickfade
 
-#It’s called a longing heart, because not only does it cause the vessels to turn dark blue and swell up, but it also affects the victim emotionally by placing them in a chronic state of despair. That’s at least how he was when we first left. Everything he did felt dreadful and pointless, but this now... He’s turned into a real asshole. See, I didn’t marry a man who hated living. That’s why I chose to leave Carna and find the people who know the cure. But boy, I certainly didn’t marry an asshole. And that’s why I have to keep going and get there as fast as possible. I can’t imagine what’s next if this whole thing is not undone soon.
+    play music "heartofaffliction.mp3"
 
-# FADE BACK TO CHARACTER VIEW
-# BGM FADES OUT
+    pause 6.0 #Temp
 
-    d "Do you know why the leaders “take in” those who are diseased? It’s not because we’re contagious, or you’d be affected now too."
+    # It’s called a longing heart, because not only does it cause the vessels to turn dark blue and swell up, but it also affects the victim emotionally by placing them in a chronic state of despair. That’s at least how he was when we first left. Everything he did felt dreadful and pointless, but this now... He’s turned into a real asshole. See, I didn’t marry a man who hated living. That’s why I chose to leave Carna and find the people who know the cure. But boy, I certainly didn’t marry an asshole. And that’s why I have to keep going and get there as fast as possible. I can’t imagine what’s next if this whole thing is not undone soon.
+    
+    stop music fadeout 3.0
+
+    pause 3.0
+
+#Scene 2
+label pro2:
+
+    scene bg_river with quickfade #Temp. New BG should be risenian gates.
+
+    show durs longing1 with dissolve
+
+    d "Do you know why the leaders “take in” those who are diseased?{w} It’s not because we’re contagious, or you’d be affected now too."
 
     elo "Maybe I’m just stronger than you."
 
-    d "You’re real funny, Elorey. But seriously, it’s because they don’t want anyone to explode on their friends and family."
+    d "That's real funny, Elorey."
 
-    elo "Please, enough of that already... Hey look, do you see it? The walls are just ahead of us."
+    pause .8
+    
+    d "But seriously, it’s gotta be to prevent people from exploding on their friends and family."
+    d "Right?"
 
-# BG: Risenian gates
-# BGM: Kingdom Gates
+    elo "Please, enough of that already..."
 
-    elo "It really is there."
+    pause .8
 
-    d "Ah, the fabled Kingdom of Risenia, land of uttermost gloriosity and powerfulness."
+    elo "Hey look, do you see it?{w} The walls are just ahead of us."
 
-# RETURN TO CHARACTER VIEW
+    show bg_scene with quickfade #Temp. Use show and hide instead of scene.
 
+    play music "riseniangates.mp3"
+
+    elo "It really is huge."
+
+    d "Ah, the fabled Kingdom of Risenia.{w} Land of uttermost gloriosity and powerfulness."
     d "No way those starch-collared highlives would stop to hear our needs."
 
-    elo "Look, there’s a man now coming from the gates. I’m sure he’ll be willing to ride us in and prove you wrong."
+    nar "Starch?"
 
-    d "I hear that since they already have everything they’ll ever need, they make a sport out of doing good deeds. Whoever receives the loudest praise is the winner."
+    elo "Look, there’s a man now coming from the gates.{w} I’m sure he’ll be willing to ride us in and prove you wrong."
+
+    d "I hear that since they already have everything they’ll ever need, they make a sport out of doing good deeds.{w} Whoever receives the loudest praise is the winner."
 
     elo "He seems like a very nice and helpful man."
 
@@ -107,51 +136,75 @@ label pro1:
 
     elo "Here he comes."
 
+    hide bg_scene with quickfade
+
     d "Hey, maybe the man will be more likely to receive us if we praise his horse."
 
     elo "Excuse me, sir. May we ask a favor of you?"
 
+    show durs longing1:
+        xalign 0.25, yalign 1.0
+    with move
+    
+    show leyna normal:
+        xalign 0.75, yalign 1.0
+    with dissolve
+
     Kris "Oh graces, what is this now? I’m being stopped by outsiders?"
 
-    elo "You're from the Kingdom, right? We’re villagers from Carna."
+    elo "You're from the Kingdom, right?{w} We’re villagers from Carna."
 
-    Kris "What has given these tribal fools the idea -"
+    Kris "What has given these tribal fools the idea -{w=.1}{nw}"
 
-    d "Good sir of Risenia, what a fine steed you have there...much indeedily."
+    d "Good sir of Risenia, what a fine steed you have there.{w}..much indeedily."
 
-    Kris "And now do they further mock me or is this adoration sincere? I’ve never encountered this sort of person."
+    Kris "And now do they further mock me or is this sincere adoration? I’ve never before encountered this sort of person."
 
     nar "He continues to think aloud to himself."
 
     Kris "Best to move on before they decide to ask something of me."
 
+    hide leyna normal with dissolve
+
     elo "Please wait, sir! We need to ask something of you."
 
-    Kris "*sigh* Alas it is too late. You there, travelers! What reason, if any, may I ask, do you have for stopping a knight of Risenia amidst his afternoon joyride?"
+    show leyna normal:
+        xalign 0.75, yalign 1.0
+    with dissolve
 
-    elo "This is my husband, Durs. As I think you can tell, he’s terribly ill -"
+    Kris "*sigh* Alas it is too late."
+    Kris "You there, travelers!{w=.25} What reason, if any, may I ask, do you have for stopping a knight of Risenia amidst his afternoon joyride?"
 
-    d "Watch the language, woman."
+    elo "This is my husband, Durs.{w} As I think you can tell, he’s terribly ill."
+
+    d "Woah, watch the language, woman."
+
+    pause .8
 
     elo "Modestly infected...?"
 
     d "..."
 
-    elo "He’s sick. And your people are said to be the only ones who can help. I only ask that you give us a ride into the gates so he can get treated as soon as possible."
+    pause .8
 
-    Kris "Oh goodness... Oh my goodness graces... People, can’t you see that there’s no one around? Why in the King’s name would you then ask me for assistance?"
+    elo "He’s just a little sick. And your people are said to be the only ones who can help.{w} I only ask that you give us a ride into the gates so he can get treated as soon as possible."
+
+    Kris "Oh for goodness...{w} Oh for goodness graces...{w} People,{w=.1} can’t you see that there’s no one around"
+    Kris "Why in the King’s name would you then ask me for assistance?"
 
     d "Well gosh, you high-horsed hooligan. Isn’t that EXACTLY the reason we need help from you?"
 
-    Kris "Well gosh, you blue-faced balloon-bottomed buffoon. Isn’t that exactly why I shouldn’t? Who else here would vouch for my actions? Certainly not the “fine steed” I “much indeedily” have here."
+    Kris "Oh, well gosh, you blue-faced balloon-bottomed buffoon.{w} Isn’t that exactly why I shouldn’t?{w} Who else here would vouch for my actions?"
+    Kris "Certainly not the{w=.1} \“fine steed\” I{w=.1} \“much indeedily\” have here."
 
     d "Vouch?"
 
     elo "Vouch?"
 
-    d "Balloon?"
+    d "Balloon?{w=.1}{nw}"
 
-    Kris "Alas, these foreigners really are as absent as they come. Now, listen you travelers, I have no more time for this empty form of chatter. Go back to your land, and stay away from ours."
+    Kris "Alas, these foreigners really are as absent as they come."
+    Kris "Now, listen you travelers, I have no more time for this empty form of chatter.{w} Go back to your land, and stay away from ours."
 
     elo "Is he being serious?"
 
@@ -159,62 +212,74 @@ label pro1:
 
     d "He’s seriously leaving."
 
-# BGM CUTS OUT
+    pause .8
+
+    hide leyna normal
+    stop music
 
     elo "He left!"
 
-    d "Wow. I should be happy to prove you wrong, but it really sucks in this sort of situation. You feel?"
+    show durs longing1:
+        xalign .5, yalign 1.0
+    with move
+
+    d "Wow. I should be happy to prove you wrong, but it really sucks in this sort of situation.{w} You feel?"
 
     elo "He was just one person."
 
-    d "Yep, and there’s a whole kingdom of them behind those walls just waiting for us. Or- probably not waiting for us."
+    d "Yep, and there’s a whole kingdom of them behind those walls just waiting for us.{w} Or -{w=.25} probably not waiting for us."
 
     elo "What do you think he meant by vouch for him?"
 
     d "...probably waiting for the chance to kick us out at least."
 
-    elo "Hey you."
+    elo "Hey."
 
-    d "What? What do you want, woman? Still don’t get it? It’s like I told you. The little game they play. No one’s here to watch him pull a favor, so he decides it’s a waste of his time. I thought that was obvious by now."
+    d "What?{w} What do you want, woman?{w} Still don’t get it?"
+    d "It’s like I told you. The little game they play.{w} No one’s here to watch him pull a favor, so he decides it’s a waste of his time.{w} I thought that was obvious by now."
 
     elo "Durs..."
 
-    d "Come on, Elorey, I don’t remember you ever being so ignorant. I thought I at least married a little better."
+    d "Come on, Elorey, I don’t remember you ever being so ignorant.{w} I thought I at least married a little better."
 
-    elo "... Fine, you were right. That what you want to hear?"
+    elo "..."
+    elo "Fine, you were right.{w} That what you want to hear?"
 
     d "Louder please."
 
-    elo "So what?! Even if they’re all turds, they’ll have no problem helping you once we’re inside and there’s an audience available, right?"
+    elo "Ugh. So what?!{w} Let's say they're all turds. They'll be dying to help once we’re inside and there’s an audience available, right?"
 
     nar "I can’t get mad too..."
 
-    elo "It doesn’t end like this. It can’t..."
+    elo "It doesn’t end like this.{w} It can’t..."
 
     d "We’ll see about that. I’m sure they’ll have loads more excuses."
 
     nar "Does this guy even want to be cured?"
 
-    d "And no more asking people for help before we get there. Save us the embarrassment, please."
+    d "And no more asking people for help before we get there.{w} Save us the embarrassment, please."
 
     elo "Ok..."
 
-    d "Oh by the way. About my balloon bottom."
+    pause .8
 
-    elo "Hm?"
+    d "Oh by the way.{w} About my balloon bottom."
+
+    elo "Yeah?"
 
     d "Has it really gotten that bad?"
 
-# BG: Durs’s bottom
+    show bg_scene with quickfade #Temp.
 
-    nar "It sounded like a childish little insult in response to his own cheesy taunts, but it really has gotten worse. Not only have his heart and the vessels in his face engorged, but a lot of it is pumping uncontrollably to his extremities."
+    nar "What sounded like a childish little insult in response to his own cheesy taunts, turns out to be pretty telling of his situation."
+    nar "Not only have his heart and the vessels in his face engorged, but a lot of it is pumping uncontrollably to his extremities."
 
-    elo "Like I said. I’ll drag you if I have to."
+    elo "Like I said.{w} I’ll drag you if I have to."
 
-# FADE TO NARRATION SCENE (PROBABLY JUST BLACK)
-# STILL NO BGM
+# Second interlude : Note there is no music this time.
+    scene bg_discourse with quickfade
 
-#What is “it” exactly though? Besides blue and thick and absolutely frustrating to deal with for the both of us? I don’t know much else. It’s obviously strong enough to change the man I love into a completely different person. How though? Why? I’m not sure anyone knows. But I don’t have to understand how it works. I just have to believe there’s a way to get it out. Without exploding. I can’t afford for him to prove me wrong again.
+    #What is “it” exactly though? Besides blue and thick and absolutely frustrating to deal with for the both of us? I don’t know much else. It’s obviously strong enough to change the man I love into a completely different person. How though? Why? I’m not sure anyone knows. But I don’t have to understand how it works. I just have to believe there’s a way to get it out. Without exploding. I can’t afford for him to prove me wrong again.
 
 # FADE BACK TO CHARACTER VIEW
 # CONTINUE AT 0.2

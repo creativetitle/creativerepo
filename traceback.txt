@@ -2,9 +2,9 @@
 
 While running game code:
   File "game/script/story/prologue 1.0.rpy", line 6, in script
-    define nar = Character("Narrator", narrator)
+    define nar = Character("Narrator", kind = narrator, what_color = "#94cc92")
   File "game/script/story/prologue 1.0.rpy", line 6, in <module>
-    define nar = Character("Narrator", narrator)
+    define nar = Character("Narrator", kind = narrator, what_color = "#94cc92")
 NameError: name 'narrator' is not defined
 
 -- Full Traceback ------------------------------------------------------------
@@ -15,13 +15,13 @@ Full traceback:
   File "C:\Users\danie\Documents\Renpy\renpy\main.py", line 419, in main
     game.context().run(node)
   File "game/script/story/prologue 1.0.rpy", line 6, in script
-    define nar = Character("Narrator", narrator)
+    define nar = Character("Narrator", kind = narrator, what_color = "#94cc92")
   File "C:\Users\danie\Documents\Renpy\renpy\ast.py", line 1816, in execute
     value = renpy.python.py_eval_bytecode(self.code.bytecode)
   File "C:\Users\danie\Documents\Renpy\renpy\python.py", line 1743, in py_eval_bytecode
     return eval(bytecode, globals, locals)
   File "game/script/story/prologue 1.0.rpy", line 6, in <module>
-    define nar = Character("Narrator", narrator)
+    define nar = Character("Narrator", kind = narrator, what_color = "#94cc92")
 NameError: name 'narrator' is not defined
 
 Windows-8-6.2.9200

@@ -2,56 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script/story/prologue 1.0.rpy", line 73: expected statement.
-    FADE TO NARRATION SCENE (PROBABLY JUST BLACK)
-                            ^
-
-File "game/script/story/prologue 1.0.rpy", line 74: expected statement.
-    BGM: Heart of Affliction
-       ^
-
-File "game/script/story/prologue 1.0.rpy", line 78: expected statement.
-    FADE BACK TO CHARACTER VIEW
-                               ^
-
-File "game/script/story/prologue 1.0.rpy", line 79: expected statement.
-    BGM FADES OUT
-                 ^
-
-File "game/script/story/prologue 1.0.rpy", line 89: expected statement.
-    BG: Risenian gates
-      ^
-
-File "game/script/story/prologue 1.0.rpy", line 90: expected statement.
-    BGM: Kingdom Gates
-       ^
-
-File "game/script/story/prologue 1.0.rpy", line 96: expected statement.
-    RETURN TO CHARACTER VIEW
-                            ^
-
-File "game/script/story/prologue 1.0.rpy", line 162: expected statement.
-    BGM CUTS OUT
-                ^
-
-File "game/script/story/prologue 1.0.rpy", line 208: expected statement.
-    BG: Durs’s bottom
-      ^
-
-File "game/script/story/prologue 1.0.rpy", line 214: expected statement.
-    FADE TO NARRATION SCENE (PROBABLY JUST BLACK)
-                            ^
-
-File "game/script/story/prologue 1.0.rpy", line 215: expected statement.
-    STILL NO BGM
-                ^
-
-File "game/script/story/prologue 1.0.rpy", line 219: expected statement.
-    FADE BACK TO CHARACTER VIEW
-                               ^
-
-File "game/script/story/prologue 1.0.rpy", line 220: expected statement.
-    CONTINUE AT 0.2
-                 ^
+File "game/script/story/prologue 1.0.rpy", line 233: Line is indented, but the preceding pause statement statement does not expect a block. Please check this line's indentation.
+    elo "Hey."
+    ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187
