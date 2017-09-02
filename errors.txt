@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script/story/prologue 1.0.rpy", line 233: Line is indented, but the preceding pause statement statement does not expect a block. Please check this line's indentation.
-    elo "Hey."
+File "game/script/etc/init.rpy", line 5: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    $show character
     ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187

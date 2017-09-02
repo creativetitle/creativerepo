@@ -1,13 +1,3 @@
-# Define variables
-define newscene = Fade(1.5,1.5,1.8)
-define quickfade = Dissolve(.8)
-
-# Define characters
-define nar = Character("", what_color = "#94cc92")
-define elo = Character("Elorey")
-define d = Character("Durs", image = "durs")
-define Kris = Character("Knightly Risenian")
-
 # Prologue start : Scene 1
 label pro1:
 
@@ -85,7 +75,7 @@ label pro1:
 
     pause 6.0 #Temp
 
-    # It’s called a longing heart, because not only does it cause the vessels to turn dark blue and swell up, but it also affects the victim emotionally by placing them in a chronic state of despair. That’s at least how he was when we first left. Everything he did felt dreadful and pointless, but this now... He’s turned into a real asshole. See, I didn’t marry a man who hated living. That’s why I chose to leave Carna and find the people who know the cure. But boy, I certainly didn’t marry an asshole. And that’s why I have to keep going and get there as fast as possible. I can’t imagine what’s next if this whole thing is not undone soon.
+    dis "It’s called a longing heart, because not only does it cause the vessels to turn dark blue and swell up, but it also affects the victim emotionally by placing them in a chronic state of despair. That’s at least how he was when we first left. Everything he did felt dreadful and pointless, but this now... He’s turned into a real asshole. See, I didn’t marry a man who hated living. That’s why I chose to leave Carna and find the people who know the cure. But boy, I certainly didn’t marry an asshole. And that’s why I have to keep going and get there as fast as possible. I can’t imagine what’s next if this whole thing is not undone soon."
     
     stop music fadeout 3.0
 
@@ -143,11 +133,11 @@ label pro2:
     elo "Excuse me, sir. May we ask a favor of you?"
 
     show durs longing1:
-        xalign 0.25, yalign 1.0
+        xalign .25, yalign 1.0
     with move
     
     show leyna normal:
-        xalign 0.75, yalign 1.0
+        xalign .75, yalign 1.0
     with dissolve
 
     Kris "Oh graces, what is this now? I’m being stopped by outsiders?"
@@ -169,7 +159,7 @@ label pro2:
     elo "Please wait, sir! We need to ask something of you."
 
     show leyna normal:
-        xalign 0.75, yalign 1.0
+        xalign .75, yalign 1.0
     with dissolve
 
     Kris "*sigh* Alas it is too late."
@@ -212,15 +202,15 @@ label pro2:
 
     d "He’s seriously leaving."
 
-    pause .8
-
     hide leyna normal
     stop music
+
+    pause .8
 
     elo "He left!"
 
     show durs longing1:
-        xalign .5, yalign 1.0
+        center
     with move
 
     d "Wow. I should be happy to prove you wrong, but it really sucks in this sort of situation.{w} You feel?"
@@ -279,7 +269,7 @@ label pro2:
 # Second interlude : Note there is no music this time.
     scene bg_discourse with quickfade
 
-    #What is “it” exactly though? Besides blue and thick and absolutely frustrating to deal with for the both of us? I don’t know much else. It’s obviously strong enough to change the man I love into a completely different person. How though? Why? I’m not sure anyone knows. But I don’t have to understand how it works. I just have to believe there’s a way to get it out. Without exploding. I can’t afford for him to prove me wrong again.
+    dis "What is “it” exactly though? Besides blue and thick and absolutely frustrating to deal with for the both of us? I don’t know much else. It’s obviously strong enough to change the man I love into a completely different person. How though? Why? I’m not sure anyone knows. But I don’t have to understand how it works. I just have to believe there’s a way to get it out. Without exploding. I can’t afford for him to prove me wrong again."
 
 # FADE BACK TO CHARACTER VIEW
 # CONTINUE AT 0.2

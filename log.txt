@@ -1,4 +1,4 @@
-Fri Sep 01 21:30:18 2017
+Sat Sep 02 13:16:26 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
  
@@ -7,28 +7,28 @@ Bootstrap to the start of init.init took 0.07s
 Early init took 0.01s
 Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.17s
+Loading script took 0.21s
 Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.01s
+Running init code took 0.40s
+Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\danie\\AppData\\Roaming/RenPy/backups\\AMBASSADOR':
-Dump and make backups. took 0.06s
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 2.000000
-Creating interface object took 0.03s
+Creating interface object took 0.04s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.01s
-Load screen analysis took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
 Analyze screens took 0.01s
-Save screen analysis took 0.05s
+Save screen analysis took 0.08s
 Prepare screens took 0.04s
 Save pyanalysis. took 0.06s
-Save bytecode. took 0.07s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.01s
@@ -266,24 +266,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.25199985504s
+Total time until interface ready: 1.88700008392s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017000 seconds.
+- Frame drawn at 0.019000 seconds.
+- Frame drawn at 0.032000 seconds.
 - Frame drawn at 0.045000 seconds.
 - Frame drawn at 0.062000 seconds.
-- Frame drawn at 0.079000 seconds.
-- 0.079000 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.01s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-The window was minimized.
-The window was restored.
-
-primary display bounds: (0, 0, 2736, 1824)
-Windowed mode.
-Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+- 0.062000 seconds to render 5 frames.

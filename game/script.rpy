@@ -1,21 +1,6 @@
 label main_menu:
     return
 
-#Define variables.
-
-define newscene = Fade(1.5,1.5,1.8)
-#define chleft = xalign 0.25, yalign 1.0
-#define chright = xalign = 0.75, yalign 1.0
-
-#Define characters.
-
-define ley = Character("Leyna", image = "leyna")
-define ldurs = Character("Durs??")
-
-#Define sprites
-
-#Game start.
-
 label start:
 
     scene bg_river with newscene
@@ -32,11 +17,11 @@ label start:
     ley normal "So put on your dancing shoes and raise your expectations high as we dive-{w=.1}{nw}"
 
     show leyna normal:
-        xalign 0.25, yalign 1.0
+        xalign .25, yalign 1.0
     with move
     
     show durs loathing:
-        xalign 0.75, yalign 1.0
+        xalign .75, yalign 1.0
     with vpunch
 
     ldurs "ROOOAAAR!{fast}"
