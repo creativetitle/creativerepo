@@ -1,3 +1,5 @@
+init offset = -1
+
 # Define variables
 define newscene = Fade(1.5,1.5,1.8)
 define quickfade = Dissolve(.8)

@@ -4,7 +4,7 @@
 
 ## The init offset statement causes the init code in this file to run before
 ## init code in any other file.
-init offset = -2
+init offset = -3
 
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.

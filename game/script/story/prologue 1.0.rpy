@@ -5,13 +5,13 @@ label pro1:
 
     elo "How is it now?"
 
-    show durs longing1 with dissolve
+    show durs longing1 normal with dissolve
 
     d "Better."
 
     elo "Yeah? That’s good."
 
-    d "That was sarcasm. Can you see my face?"
+    d disap "That was sarcasm. Can you see my face?"
 
     elo "Oh..."
 
@@ -19,17 +19,17 @@ label pro1:
 
     elo "Sorry, Durs, I just need to know how much pain you’re feeling so I can -{w=.1}{nw}"
 
-    d "So you can help or something?{w} Don’t worry. I’m not in pain yet, but I’m certainly not feeling better. Thanks for asking."
+    d normal "So you can help or something?{w} Don’t worry. I’m not in pain yet, but I’m certainly not feeling better. Thanks for asking."
 
     nar "What does that even mean?"
 
     elo "Listen, I’m getting you inside those walls no matter what.{w} I’ll carry you if I have to."
 
-    d "..."
+    d disap "..."
 
     elo "Er -{w=.25} drag you."
 
-    d "Hmm that’s great."
+    d normal "Hmm that’s great."
 
     nar "At least I can tell that was sarcasm."
 
@@ -39,41 +39,49 @@ label pro1:
 
     elo "Your arms won’t explode."
 
-    d "Not first.{w} My arms won’t explode first.{w} It’s the heart that goes first. Everyone knows that."
+    d talk "Not first."
+    show durs longing1 normal
+    extend " My arms won’t explode first."
+    show durs longing1 talk
+    extend " It’s the heart that goes first. Everyone knows that."
 
     elo "No, no one knows that. It’s a complete myth that anything will \“explode.\”"
 
-    d "Don’t be stupid, Elorey.{w} Look, one touch and it would probably pop."
+    d normal "Don’t be stupid, Elorey.{w} Look, one touch and it would probably pop."
 
     nar "I love him too much to be offended by his words right now.{w} And I’m trying to understand what he’s going through." 
     nar "I place my hand on where his chest bulges and discolors.{w} I even give a little comforting rub."
 
     pause .8
 
-    d "It’s not a baby, Elorey."
-    d "Didn't I say not to touch it?{w} Get those hands off me."
+    d disap "It’s not a baby, Elorey."
 
     elo "B-{w=.25}baby?"
 
+    d mad "Didn't I say not to touch it?{w} Get those hands off me."
+
     nar "Uh...now’s definitely not the time to bring up that news."
 
-    d "And I’m sure this’ll hurt a whole lot more coming out."
+    d ignore "And I’m sure this’ll hurt a whole lot more coming out."
 
     elo "Nothing’s coming out Durs!{w} You’re going to be alright."
 
-    d "\“Alright,\” she says.{w} I’m growing a blue balloon in my chest and she says, \“Alright.\”"
-    d "You can be a real airhead sometimes, you know?{w} But hey, I think I’m actually starting to feel better."
-    d "The swelling’s gone down, and I’m feeling generally kinder than yesterday.{w} Maybe for once that awful intuition of yours will prove us wrong."
+    d disap "\“Alright,\” she says.{w} I’m growing a blue balloon in my chest and she says, \“Alright.\”"
+    d "You can be a real airhead sometimes, you know?"
+    show durs longing1 normal
+    extend " But hey, I think I’m actually starting to feel better."
+    d talk "The swelling’s gone down, and I’m feeling generally kinder than yesterday.{w} Maybe for once that awful intuition of yours will prove us wrong."
 
     nar "Do I even try to interpret whether he really meant that?"
+
+    show durs longing1 normal
+
     nar "His face is definitely getting worse.{w} And I’d say he’s lost sense of the word \“kindness...\”"
 
 # 1st interlude
     scene bg_discourse with quickfade
 
     play music "heartofaffliction.mp3"
-
-    pause 6.0 #Temp
 
     dis "It’s called a longing heart, because not only does it cause the vessels to turn dark blue and swell up, but it also affects the victim emotionally by placing them in a chronic state of despair. That’s at least how he was when we first left. Everything he did felt dreadful and pointless, but this now... He’s turned into a real asshole. See, I didn’t marry a man who hated living. That’s why I chose to leave Carna and find the people who know the cure. But boy, I certainly didn’t marry an asshole. And that’s why I have to keep going and get there as fast as possible. I can’t imagine what’s next if this whole thing is not undone soon."
     
@@ -86,18 +94,18 @@ label pro2:
 
     scene bg_river with quickfade #Temp. New BG should be risenian gates.
 
-    show durs longing1 with dissolve
+    show durs longing1 talk with dissolve
 
     d "Do you know why the leaders “take in” those who are diseased?{w} It’s not because we’re contagious, or you’d be affected now too."
 
     elo "Maybe I’m just stronger than you."
 
-    d "That's real funny, Elorey."
+    d normal "That's real funny, Elorey."
 
     pause .8
     
-    d "But seriously, it’s gotta be to prevent people from exploding on their friends and family."
-    d "Right?"
+    d talk "But seriously.{w} It’s to prevent people from exploding on their friends and family."
+    d normal "Right?"
 
     elo "Please, enough of that already..."
 
@@ -111,8 +119,8 @@ label pro2:
 
     elo "It really is huge."
 
-    d "Ah, the fabled Kingdom of Risenia.{w} Land of uttermost gloriosity and powerfulness."
-    d "No way those starch-collared highlives would stop to hear our needs."
+    d talk "Ah, the fabled Kingdom of Risenia.{w} Land of uttermost gloriosity and powerfulness."
+    d ignore "No way those starch-collared highlives would stop to hear our needs."
 
     nar "Starch?"
 
@@ -122,7 +130,7 @@ label pro2:
 
     elo "He seems like a very nice and helpful man."
 
-    d "And you're an extra winner if you can grab the King’s attention."
+    d talk "And you're an extra winner if you can grab the King’s attention."
 
     elo "Here he comes."
 
@@ -132,7 +140,7 @@ label pro2:
 
     elo "Excuse me, sir. May we ask a favor of you?"
 
-    show durs longing1:
+    show durs longing1 normal:
         xalign .25, yalign 1.0
     with move
     
@@ -146,7 +154,10 @@ label pro2:
 
     Kris "What has given these tribal fools the idea -{w=.1}{nw}"
 
-    d "Good sir of Risenia, what a fine steed you have there.{w}..much indeedily."
+    show durs longing1 talk
+    d "Good sir of Risenia, what a fine steed you have there."
+    show durs longing1 normal
+    extend "..much indeedily."
 
     Kris "And now do they further mock me or is this sincere adoration? I’ve never before encountered this sort of person."
 
@@ -167,31 +178,31 @@ label pro2:
 
     elo "This is my husband, Durs.{w} As I think you can tell, he’s terribly ill."
 
-    d "Woah, watch the language, woman."
+    d mad "Woah, watch the language, woman."
 
     pause .8
 
     elo "Modestly infected...?"
 
-    d "..."
+    d disap "..."
 
     pause .8
 
     elo "He’s just a little sick. And your people are said to be the only ones who can help.{w} I only ask that you give us a ride into the gates so he can get treated as soon as possible."
 
-    Kris "Oh for goodness...{w} Oh for goodness graces...{w} People,{w=.1} can’t you see that there’s no one around"
+    Kris "Oh for goodness...{w} Oh for goodness graces...{w} People,{w=.1} can’t you see that there’s no one around?"
     Kris "Why in the King’s name would you then ask me for assistance?"
 
-    d "Well gosh, you high-horsed hooligan. Isn’t that EXACTLY the reason we need help from you?"
+    d mad "Well gosh, you high-horsed hooligan. Isn’t that EXACTLY the reason we need help from you?"
 
     Kris "Oh, well gosh, you blue-faced balloon-bottomed buffoon.{w} Isn’t that exactly why I shouldn’t?{w} Who else here would vouch for my actions?"
     Kris "Certainly not the{w=.1} \“fine steed\” I{w=.1} \“much indeedily\” have here."
 
-    d "Vouch?"
+    d normal "Vouch?"
 
     elo "Vouch?"
 
-    d "Balloon?{w=.1}{nw}"
+    d disap "Balloon?{w=.25}{nw}" #Longer interruption wait than usual.
 
     Kris "Alas, these foreigners really are as absent as they come."
     Kris "Now, listen you travelers, I have no more time for this empty form of chatter.{w} Go back to your land, and stay away from ours."
@@ -200,7 +211,7 @@ label pro2:
 
     Kris "Off we go, my fine steed!"
 
-    d "He’s seriously leaving."
+    d ignore "He’s seriously leaving."
 
     hide leyna normal
     stop music
@@ -213,11 +224,15 @@ label pro2:
         center
     with move
 
-    d "Wow. I should be happy to prove you wrong, but it really sucks in this sort of situation.{w} You feel?"
+    d normal "Wow. I should be happy to prove you wrong, but it really sucks in this sort of situation."
+    show durs longing1 talk
+    extend " You feel?"
 
     elo "He was just one person."
 
-    d "Yep, and there’s a whole kingdom of them behind those walls just waiting for us.{w} Or -{w=.25} probably not waiting for us."
+    d "Yep, and there’s a whole kingdom of them behind those walls just waiting for us."
+    show durs longing1 ignore
+    extend " Or -{w=.25} probably not waiting for us."
 
     elo "What do you think he meant by vouch for him?"
 
@@ -225,17 +240,17 @@ label pro2:
 
     elo "Hey."
 
-    d "What?{w} What do you want, woman?{w} Still don’t get it?"
+    d normal "What?{w} What do you want, woman?{w} Still don’t get it?"
     d "It’s like I told you. The little game they play.{w} No one’s here to watch him pull a favor, so he decides it’s a waste of his time.{w} I thought that was obvious by now."
 
     elo "Durs..."
 
-    d "Come on, Elorey, I don’t remember you ever being so ignorant.{w} I thought I at least married a little better."
+    d disap "Come on, Elorey, I don’t remember you ever being so ignorant.{w} I thought I at least married a little better."
 
     elo "..."
     elo "Fine, you were right.{w} That what you want to hear?"
 
-    d "Louder please."
+    d talk "Louder please."
 
     elo "Ugh. So what?!{w} Let's say they're all turds. They'll be dying to help once we’re inside and there’s an audience available, right?"
 
@@ -243,21 +258,21 @@ label pro2:
 
     elo "It doesn’t end like this.{w} It can’t..."
 
-    d "We’ll see about that. I’m sure they’ll have loads more excuses."
+    d normal "We’ll see about that. I’m sure they’ll have loads more excuses."
 
     nar "Does this guy even want to be cured?"
 
-    d "And no more asking people for help before we get there.{w} Save us the embarrassment, please."
+    d disap "And no more asking people for help before we get there.{w} Save us the embarrassment, please."
 
     elo "Ok..."
 
     pause .8
 
-    d "Oh by the way.{w} About my balloon bottom."
+    d talk "Oh by the way.{w} About my balloon bottom."
 
     elo "Yeah?"
 
-    d "Has it really gotten that bad?"
+    d ignore "Has it really gotten that bad?"
 
     show bg_scene with quickfade #Temp.
 
