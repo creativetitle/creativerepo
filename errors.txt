@@ -2,8 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script/story/prologue 1.0.rpy", line 231: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        d "Yep, and there’s a whole kingdom of them behind those walls just waiting for us.
+File "game/script/etc/gui.rpy", line 123: is not terminated with a newline. (Check strings and parenthesis.)
+    define gui.namebox_borders = Borders(0, 0, 0, 0, pad_top=60
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187

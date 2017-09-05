@@ -30,4 +30,4 @@ label start:
 
     stop music fadeout 3.0
          
-    jump pro1
+    jump pro2
