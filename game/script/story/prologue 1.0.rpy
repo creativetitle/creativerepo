@@ -81,7 +81,6 @@ label pro1:
     nar "His face is definitely getting worse.{w} And I’d say he’s lost sense of the word \“kindness...\”"
 
 # 1st interlude
-label pro2:
     scene bg_discourse with quickfade
 
     play music "heartofaffliction.mp3"
@@ -93,7 +92,7 @@ label pro2:
     pause 3.0
 
 #Scene 2
-#label pro2:
+label pro2:
 
     scene bg_river with quickfade #Temp. New BG should be risenian gates.
 
