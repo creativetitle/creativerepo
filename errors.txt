@@ -2,7 +2,16 @@
 errors listed below, and try again.
 
 
-File "game/script/etc/gui.rpy", line 123: is not terminated with a newline. (Check strings and parenthesis.)
-    define gui.namebox_borders = Borders(0, 0, 0, 0, pad_top=60
+File "game/script/etc/gui.rpy", line 71: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/script/etc/gui.rpy", line 76: expected statement.
+    =======
+          ^
+
+File "game/script/etc/gui.rpy", line 81: expected statement.
+    >>>>>>> 896344c24ea4827a67c712c39bc876c74e71b08d
+                                                    ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187
