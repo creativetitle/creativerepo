@@ -17,7 +17,7 @@ label pro1:
 
     nar "I don’t know if he wants me to note the swelling from the poison or the sarcasm on his expression.{w} Or both?"
 
-    elo "Sorry, Durs, I just need to know how much pain you’re feeling so I can -{w=.1}{nw}"
+    elo "Sorry, Durs, I just need to know how much pain you’re feeling so I can -{w=.2}{nw}"
 
     d normal "So you can help or something?{w} Don’t worry. I’m not in pain yet, but I’m certainly not feeling better. Thanks for asking."
 
@@ -60,7 +60,7 @@ label pro1:
 
     d mad "Didn't I say not to touch it?{w} Get those hands off me."
 
-    elo "You didn't really -{w=.1}{nw}"
+    elo "You didn't really -{w=.2}{nw}"
 
     d ignore "And I’m sure this’ll hurt a whole lot more coming out."
 
@@ -155,14 +155,14 @@ label pro2:
 
     elo "You're from the Kingdom, right?{w} We’re villagers from Carna."
 
-    Kris "What has given these tribal fools the idea -{w=.1}{nw}"
+    Kris "What has given these tribal fools the idea -{w=.2}{nw}"
 
     show durs longing1 talk
     d "Good sir of Risenia, what a fine steed you have there."
     show durs longing1 normal
     extend "..much indeedily."
 
-    Kris "Why thank -{w=.1}{nw}"
+    Kris "Why thank -{w=.2}{nw}"
     Kris "Wait, do they further mock me or is this sincere adoration? I’ve never encountered this sort of person before."
 
     nar "He continues to think aloud to himself..."
@@ -246,7 +246,7 @@ label pro2:
 
     d disap "What?{w} What do you want, woman?{w} Still don’t get it?"
 
-    elo "Well, I meant{w=.1}{nw}"
+    elo "Well, I meant{w=.2}{nw}"
 
     d normal "It’s like I told you. The little game they play.{w} No one’s here to watch him pull a favor, so he decides it’s a waste of his time.{w} I thought that was obvious by now."
 

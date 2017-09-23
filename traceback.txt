@@ -1,29 +1,21 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script/etc/gui.rpy", line 123, in script
-    define gui.namebox_borders = Borders(pad_left=0, pad_top=0, pad_right=0, pad_bottom=0)
-  File "game/script/etc/gui.rpy", line 123, in <module>
-    define gui.namebox_borders = Borders(pad_left=0, pad_top=0, pad_right=0, pad_bottom=0)
-TypeError: __init__() takes at least 5 arguments (5 given)
+  File "game/script/story/prologue 1.0.rpy", line 6, in script
+    e "How is it now?"
+Exception: Sayer 'e' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\danie\Documents\Renpy\renpy\bootstrap.py", line 295, in bootstrap
-    renpy.main.main()
-  File "C:\Users\danie\Documents\Renpy\renpy\main.py", line 419, in main
-    game.context().run(node)
-  File "game/script/etc/gui.rpy", line 123, in script
-    define gui.namebox_borders = Borders(pad_left=0, pad_top=0, pad_right=0, pad_bottom=0)
-  File "C:\Users\danie\Documents\Renpy\renpy\ast.py", line 1816, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\danie\Documents\Renpy\renpy\python.py", line 1743, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script/etc/gui.rpy", line 123, in <module>
-    define gui.namebox_borders = Borders(pad_left=0, pad_top=0, pad_right=0, pad_bottom=0)
-TypeError: __init__() takes at least 5 arguments (5 given)
+  File "game/script/story/prologue 1.0.rpy", line 6, in script
+    e "How is it now?"
+  File "C:\Users\danie\Documents\Renpy\renpy\ast.py", line 593, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\danie\Documents\Renpy\renpy\ast.py", line 509, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'e' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
- 
+AMBASSADOR 1.0

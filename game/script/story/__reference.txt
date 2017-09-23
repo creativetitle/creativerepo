@@ -5,7 +5,7 @@ Fast:
 	show XXX
 	with vpunch
 Interruption:
-	"What's that in your hand -{w=.1}{nw}"
+	"What's that in your hand -{w=.2}{nw}"
 	"Oh, nothing..."
 Short breath:
 	"Hey,{w=.1} what's up?"
@@ -14,7 +14,7 @@ Short pause:
 Extension:
 	"Who are you?{w} Nah don't tell me.{w} Wait, yeah, tell me."
 Extension with ellipses:
-	"I'm really good at cooking.{w}..most of the time.
+	"I'm really good at cooking.{w}..most of the time."
 Dramatic pause:
 	pause 0.8
 Ellipses

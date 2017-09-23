@@ -14,3 +14,4 @@ define ldurs = Character("Durs??")
 define ley = Character("Leyna", image = "leyna")
 #Define Resenians
 define Kris = Character("Knightly Risenian")
+define Fris = Character("Fascinated Risenian")
