@@ -48,11 +48,13 @@ define gui.muted_color = '#003d51'
 define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#ffffffcc'
+define gui.text_color = '#ffffffb3'
 define gui.interface_text_color = '#2a3247'
+define gui.name_text_color = 'ffffffb3'
 
 ## The colors used for the outline of dialogue text
-define gui.dialogue_text_outlines = [(2, '#2a3247cc', 0, 0), (0, '#00000080', 1, 3)]
+define gui.dialogue_text_outlines = [(absolute(3), '#2a3247b3', absolute(0), absolute(0))]
+define gui.name_text_outlines = [(absolute(3), '#2a3247b3', absolute(0), absolute(0))]
 
 ## Fonts and Font Sizes ########################################################
 
@@ -66,10 +68,10 @@ define gui.name_text_font = "consola.ttf" #Consolas.
 define gui.interface_text_font = "consola.ttf" #Consolas.
 
 ## The size of normal dialogue text.
-define gui.text_size = 60
+define gui.text_size = 75
 
 ## The size of character names.
-define gui.name_text_size = 60
+define gui.name_text_size = 75
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 60
@@ -255,6 +257,10 @@ define gui.skip_ypos = 15
 
 ## The vertical position of the notify screen.
 define gui.notify_ypos = 68
+
+## The spacing between dialogue text
+define gui.dialogue_text_line_spacing = 20
+define gui.name_text_line_spacing = 20
 
 ## The spacing between menu choices.
 define gui.choice_spacing = 33
