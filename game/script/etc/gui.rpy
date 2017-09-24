@@ -68,17 +68,10 @@ define gui.name_text_font = "consola.ttf" #Consolas.
 define gui.interface_text_font = "consola.ttf" #Consolas.
 
 ## The size of normal dialogue text.
-<<<<<<< HEAD
-define gui.text_size = 70
-
-## The size of character names.
-define gui.name_text_size = 70
-=======
 define gui.text_size = 75
 
 ## The size of character names.
 define gui.name_text_size = 75
->>>>>>> 896344c24ea4827a67c712c39bc876c74e71b08d
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 70
