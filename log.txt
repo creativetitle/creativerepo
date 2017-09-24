@@ -1,16 +1,16 @@
-Sat Sep 23 16:56:49 2017
+Sat Sep 23 16:59:19 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
  
 
-Bootstrap to the start of init.init took 0.09s
+Bootstrap to the start of init.init took 0.08s
 Early init took 0.02s
-Loader init took 0.03s
-Loading error handling took 0.06s
-Loading script took 0.43s
-Loading persistent took 0.02s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading persistent took 0.01s
 DPI scale factor: 2.000000
-Interface start took 0.09s
+Interface start took 0.07s
 
 primary display bounds: (0, 0, 2736, 1824)
 Windowed mode.
@@ -245,4 +245,4 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.29600000381s
+Total time until interface ready: 0.817000150681s
