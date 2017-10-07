@@ -1,17 +1,6 @@
-game/cache/bytecode.rpyb
-log.txt
-game/cache/screens.rpyb
-game/saves/auto-1-LT1.save
-game/saves/auto-2-LT1.save
-game/saves/auto-3-LT1.save
-game/saves/auto-4-LT1.save
-game/saves/auto-5-LT1.save
-game/saves/auto-6-LT1.save
-game/saves/auto-7-LT1.save
-game/saves/auto-8-LT1.save
-game/saves/auto-9-LT1.save
-game/saves/auto-10-LT1.save
-game/saves/persistent
-game/script/etc/gui.rpyc
-game/script/etc/init.rpyc
-game/script/story/prologue 1.0.rpyc
+*.txt
+tmp/
+game/*.bak
+game/*.rpyb
+game/*.rpyc
+game/saves/
