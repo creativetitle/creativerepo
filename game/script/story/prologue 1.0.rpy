@@ -15,7 +15,7 @@ label pro1:
 
     elo "Oh..."
 
-    nar "I don’t know if he wants me to note the swelling from the poison or the sarcasm on his expression.{w} Or both?"
+    nar "I don’t know if he wants me to note the swelling from the poison or his sarcastic expression.{w} Or both?"
 
     elo "Sorry, Durs, I just need to know how much pain you’re feeling so I can -{w=.2}{nw}"
 
@@ -47,8 +47,8 @@ label pro1:
 
     d "Don’t be stupid, Elorey.{w} Look, one touch and it would probably pop."
 
-    nar "I love him too much to be offended by his words right now.{w} And I’m trying to understand what he’s going through." 
-    nar "I place my hand on where his chest bulges and discolors.{w} I even give a little comforting rub."
+    nar "Because I love him, and I know what kind of person he really is, I'm not offended by his crude words.{w} I’m trying really hard to understand what he’s going through." 
+    nar "I place my hand where his chest bulges and discolors.{w} I even give a little comforting rub."
 
     pause .8
 
@@ -58,9 +58,9 @@ label pro1:
 
     nar "Uh...now’s definitely not the time to bring up that news."
 
-    d mad "Didn't I say not to touch it?{w} Get those hands off me."
+    d mad "And hey, didn't I say not to touch it?{w} Get those hands off me."
 
-    elo "You didn't really -{w=.2}{nw}"
+    elo "Well you didn't exactly -{w=.2}{nw}"
 
     d ignore "And I’m sure this’ll hurt a whole lot more coming out."
 
@@ -71,8 +71,8 @@ label pro1:
     d disap "\“Alright,\” she says.{w} I’m growing a blue balloon in my chest and she says,{w=.1} \“Alright.\”"
     d "You can be a real airhead sometimes, you know?"
     show durs longing1 normal
-    extend " But hey, I think I’m actually starting to feel better."
-    d talk "The swelling’s gone down, and I’m feeling generally kinder than yesterday.{w} Maybe for once that awful intuition of yours will prove the world wrong."
+    extend " But hey, after all this talk, I think I’m actually starting to feel better."
+    d talk "The swelling’s gone down, and I’m feeling generally kinder than ten minutes ago.{w} Maybe for once that awful intuition of yours will prove the world wrong."
 
     nar "Do I even try to interpret whether he really meant that?"
 
