@@ -259,8 +259,8 @@ define gui.skip_ypos = 15
 define gui.notify_ypos = 68
 
 ## The spacing between dialogue text
-define gui.dialogue_text_line_spacing = 20
-define gui.name_text_line_spacing = 20
+define gui.dialogue_text_line_spacing = 25
+define gui.name_text_line_spacing = 25
 
 ## The spacing between menu choices.
 define gui.choice_spacing = 33
