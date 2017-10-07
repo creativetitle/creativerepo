@@ -5,7 +5,7 @@ define newscene = Fade(1.5,1.5,1.8)
 define quickfade = Dissolve(.8)
 
 # Define Main Characters
-define nar = Character("", what_outlines = [(absolute(3), '#42632bb3', absolute(0), absolute(0))]) #Thinking to yourself.
+define nar = Character("", what_outlines = [(absolute(3), '#42632b', absolute(0), absolute(0))]) #Thinking to yourself.
 define dis = Character("", what_color = "#ffffff", kind = nvl) # Narrative interlude.
 # Define Carnaites
 define elo = Character("Elorey")

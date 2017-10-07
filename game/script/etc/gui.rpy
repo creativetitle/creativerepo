@@ -53,8 +53,8 @@ define gui.interface_text_color = '#2a3247'
 define gui.name_text_color = 'ffffffb3'
 
 ## The colors used for the outline of dialogue text
-define gui.dialogue_text_outlines = [(absolute(3), '#2a3247b3', absolute(0), absolute(0))]
-define gui.name_text_outlines = [(absolute(3), '#2a3247b3', absolute(0), absolute(0))]
+define gui.dialogue_text_outlines = [(absolute(3), '#2a3247', absolute(0), absolute(0))]
+define gui.name_text_outlines = [(absolute(3), '#2a3247', absolute(0), absolute(0))]
 
 ## Fonts and Font Sizes ########################################################
 
