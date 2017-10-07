@@ -15,7 +15,7 @@ label pro1:
 
     elo "Oh..."
 
-    nar "I don’t know if he wants me to note the swelling from the poison or his sarcastic expression.{w} Or both?"
+    nar "I don’t know he's referring to the swelling from the poison or his sarcastic expression.{w} Or both?"
 
     elo "Sorry, Durs, I just need to know how much pain you’re feeling so I can -{w=.2}{nw}"
 
@@ -31,7 +31,7 @@ label pro1:
 
     d normal "Hmm that’s great."
 
-    nar "At least I can tell that was sarcasm."
+    nar "At least I can tell that one was sarcasm."
 
     elo "All I can ask is that you hang on."
 
@@ -47,7 +47,8 @@ label pro1:
 
     d "Don’t be stupid, Elorey.{w} Look, one touch and it would probably pop."
 
-    nar "Because I love him, and I know what kind of person he really is, I'm not offended by his crude words.{w} I’m trying really hard to understand what he’s going through." 
+    nar "I have to remind myself this is not the same man I fell in love with. This is just the disease affecting him."
+    nar "I'll try really hard to to understand what he’s going through and not be offended by his crude words." 
     nar "I place my hand where his chest bulges and discolors.{w} I even give a little comforting rub."
 
     pause .8
@@ -56,11 +57,11 @@ label pro1:
 
     elo "B-{w=.25}baby?"
 
-    nar "Uh...now’s definitely not the time to bring up that news."
+    nar "Oh yeah Durs, speaking of which..."
 
     d mad "And hey, didn't I say not to touch it?{w} Get those hands off me."
-
-    elo "Well you didn't exactly -{w=.2}{nw}"
+    
+    nar "Uh...never mind.{w=.1} Now’s definitely not the time to bring up that news."
 
     d ignore "And I’m sure this’ll hurt a whole lot more coming out."
 
@@ -68,11 +69,14 @@ label pro1:
 
     elo "Nothing’s coming out Durs!{w} You’re going to be alright."
 
-    d disap "\“Alright,\” she says.{w} I’m growing a blue balloon in my chest and she says,{w=.1} \“Alright.\”"
+    d disap "\“Alright,\” she says.{w} I’m growing a blue bomb in my chest and she says,{w=.1} \“Alright.\”"
     d "You can be a real airhead sometimes, you know?"
-    show durs longing1 normal
-    extend " But hey, after all this talk, I think I’m actually starting to feel better."
-    d talk "The swelling’s gone down, and I’m feeling generally kinder than ten minutes ago.{w} Maybe for once that awful intuition of yours will prove the world wrong."
+
+    nar "As opposed to all the time?{w} I think I can take that as a complement at this point."
+
+    d normal "But hey, after all this talk, I think I’m actually starting to feel better."
+    d talk "The swelling’s gone down, and I’m feeling generally kindlier than ten minutes ago."
+    d "Maybe for once that awful intuition of yours will prove the world wrong."
 
     nar "Do I even try to interpret whether he really meant that?"
 
