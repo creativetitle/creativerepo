@@ -28,3 +28,11 @@ Move location (BG) or shift to narration:
 To illustration:
 	show XXX with quickfade
 	hide XXX with quickfade
+
+Audio
+Play
+	play music "XXX.mp3"
+Music fade
+	stop music fadeout 3.0
+Music stop
+	stop music

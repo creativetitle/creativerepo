@@ -95,7 +95,7 @@ label pro1:
 
     pause 3.0
 
-#Scene 2
+# Scene 2
 label pro2:
 
     scene bg_river with quickfade #Temp. New BG should be risenian gates.
@@ -297,5 +297,4 @@ label pro2:
 
     dis "What is \“that stuff\” exactly though? Besides blue and thick and absolutely frustrating to deal with for the both of us? I don’t know much else. It’s obviously strong enough to change the man I love into a completely different person. How though? Why? I’m not sure anyone knows. But I don’t have to understand how it works. I just have to believe there’s a way to get it out. Without exploding. I can’t afford for him to prove me wrong again."
 
-# FADE BACK TO CHARACTER VIEW
-# CONTINUE AT 0.2
+    jump pro3
