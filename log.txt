@@ -1,37 +1,36 @@
-Mon Jun 18 14:39:58 2018
+Mon Jun 18 14:54:01 2018
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
  
 
-Bootstrap to the start of init.init took 0.15s
-Early init took 0.03s
-Loader init took 0.09s
-Loading error handling took 0.05s
-Loading script took 0.59s
-Loading persistent took 0.03s
+Bootstrap to the start of init.init took 0.08s
+Early init took 0.02s
+Loader init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.12s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.26s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.01s
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\danie\\AppData\\Roaming/RenPy/backups\\AMBASSADOR':
-Dump and make backups. took 0.40s
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 2.000000
-Creating interface object took 0.12s
+Creating interface object took 0.05s
 Cleaning stores took 0.00s
-Init translation took 0.14s
-Build styles took 0.02s
+Init translation took 0.04s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.21s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.19s
-Save bytecode. took 0.11s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.02s
+Interface start took 0.01s
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\danie\OneDrive\Documents\Renpy\renpy\display\core.py", line 1810, in make_draw
@@ -279,11 +278,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 3.85799980164s
+Total time until interface ready: 1.30200004578s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.041000 seconds.
+- Frame drawn at 0.025000 seconds.
+- Frame drawn at 0.040000 seconds.
 - Frame drawn at 0.055000 seconds.
-- Frame drawn at 0.073000 seconds.
-- Frame drawn at 0.089000 seconds.
-- 0.089000 seconds to render 5 frames.
+- Frame drawn at 0.072000 seconds.
+- 0.072000 seconds to render 5 frames.
