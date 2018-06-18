@@ -15,3 +15,6 @@ define ley = Character("Leyna", image = "leyna")
 #Define Resenians
 define Kris = Character("Knightly Risenian")
 define Fris = Character("Fascinated Risenian")
+define Sris = Character("Stern Risenian")
+define rights = Character("Rightstahl")
+define lid = Character("Lidmund")
