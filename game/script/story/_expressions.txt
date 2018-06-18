@@ -1,0 +1,9 @@
+durs
+ normal
+ talk
+ disap
+ mad
+ ignore
+
+knightly
+ 
