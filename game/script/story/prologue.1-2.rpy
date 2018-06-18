@@ -167,7 +167,7 @@ label pro2:
     extend "..much indeedily."
 
     Kris "Why thank -{w=.2}{nw}"
-    Kris "Wait, do they further mock me or is this sincere adoration? I’ve never encountered this sort of person before."
+    Kris "Wait,{w=.1} do they further mock me or is this sincere adoration? I’ve never encountered this sort of person before."
 
     nar "He continues to think aloud to himself..."
 
