@@ -2,12 +2,20 @@
 errors listed below, and try again.
 
 
-The label pro1 is defined twice, at
-  File "game/script/story/prologue.1.rpy", line 2 and
-  File "game/script/story/prologue.1-2.rpy", line 2.
+File "game/script/story/prologue.4-5.rpy", line 2: expected ':' not found.
+    label pro4
+              ^
 
-The label pro2 is defined twice, at
-  File "game/script/story/prologue.1.rpy", line 99 and
-  File "game/script/story/prologue.1-2.rpy", line 99.
+File "game/script/story/prologue.4-5.rpy", line 8: expected statement.
+    FADE OUT OF BLACK TO
+                        ^
+
+File "game/script/story/prologue.4-5.rpy", line 9: expected statement.
+    BG Elorey drags Durs
+                        ^
+
+File "game/script/story/prologue.4-5.rpy", line 33: expected ':' not found.
+    label pro5
+              ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187
