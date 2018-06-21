@@ -1,0 +1,4 @@
+name knightly image "knightly
+
+cd onedrive/documents/renpy/ambassador
+cd onedrive/documents/renpy/ambassador/script/story
